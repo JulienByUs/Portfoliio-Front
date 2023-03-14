@@ -184,7 +184,7 @@ const SingleProject = () => {
     useEffect(() => {
         if (!id) return;
 
-        fetch(`http://localhost:8000/api/projects/${id}`)
+        fetch(`https://julien-api.byus.dev/api/projects/${id}`)
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Project not found: ${id}`);

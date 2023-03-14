@@ -53,7 +53,7 @@ export default function Home() {
     });
 
     useEffect(() => {
-        fetch('http://localhost:8000/api/projects')
+        fetch('https://julien-api.byus.dev/api/projects')
             .then(response => response.json())
             .then(data => setProjects(data))
             .catch(error => console.error(error));
