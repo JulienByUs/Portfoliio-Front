@@ -8,4 +8,18 @@ module.exports = withTM({
 
     return config;
   },
+
+  // Add the exportPathMap function to specify the routes to include in the exported app
+  exportPathMap: async function (defaultPathMap) {
+    return {
+      '/': { page: '/' },
+      '/projects': { page: '/projects' },
+      '/blog': { page: '/blog' },
+    };
+  },
+
+  // Configure images.unoptimized to disable Image Optimization API
+  images: {
+    unoptimized: true,
+  },
 });
