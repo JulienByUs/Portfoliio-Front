@@ -3,7 +3,7 @@ import Link from 'next/link';
 import {ChevronRightIcon, HomeIcon} from "@heroicons/react/20/solid";
 import { gsap, Power4 } from "gsap";
 import Image from "next/image";
-import Layout from "@/components/Layout";
+
 
 interface Project {
     id: number;
@@ -48,7 +48,6 @@ const Project = () => {
     ]
 
     return (
-        <Layout>
         <>
             <main className="isolate">
                 {/* Projects section */}
@@ -154,7 +153,6 @@ const Project = () => {
                 </div>
             </main>
         </>
-        </Layout>
     );
 };
 

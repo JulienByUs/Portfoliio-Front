@@ -2,7 +2,7 @@ import Link from "next/link";
 import {useEffect, useState} from "react";
 import { gsap } from "gsap";
 import Image from "next/image";
-import Layout from "@/components/Layout";
+
 
 interface Category {
     id: number;
@@ -66,7 +66,6 @@ export default function Home() {
     ]
 
     return (
-        <Layout>
         <>
             <main className="isolate overflow-clip">
                 {/* Hero section */}
@@ -265,6 +264,5 @@ export default function Home() {
                 </div>
             </main>
         </>
-        </Layout>
     )
 }
