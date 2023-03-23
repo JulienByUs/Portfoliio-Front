@@ -1,8 +1,7 @@
 {
   "name": "portfolio-app-front",
   "version": "0.1.0",
-  "homepage": "https://juliienestanis.fr",
-  "private": true,
+  "homepage": "https://www.julienestanis.fr/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
